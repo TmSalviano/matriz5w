@@ -1,17 +1,17 @@
 import useCardState from "../data/hooks/useCardState";
 import "../styles/Card.css";
 
-export default function Card() {
+export default function Card({titulo, perguntas}) {
     const {
         step,setStep, direction, setDirection, formData, setFormData, 
         handleChange, handleNext, handlePrev, handleSubmit, 
-        currentField, fields, progress, totalSteps
+        currentField, progress, totalSteps
        } = useCardState();
 
   return (
     <div className="outer-box">
       <div className="form-container">
-        <h1 className="form-title">Administração</h1>
+        <h1 className="form-title">{titulo}</h1>
         <form onSubmit={handleSubmit}>
           {/* Barra de progresso */}
           <div className="progress-bar">

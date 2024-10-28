@@ -1,8 +1,7 @@
 import Card from './components/Card';
 import "./styles/App.css";
 
-function TextInput() {
-
+export default function App() {
   return (
     <div>
       <header className='container' style={{border: '3px solid white'}}>
@@ -17,5 +16,3 @@ function TextInput() {
     </div>
   );
 }
-
-export default TextInput;
