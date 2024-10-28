@@ -1,8 +1,8 @@
 .outer-box {
     max-width: 50vw;
     min-width: 45vw;
-    min-height: 33vh;
-    max-height: 35vh;
+    min-height: 30vh;
+    max-height: 45vh;
     margin: 40px auto;
     padding: 20px;
     background-color: #1e7ad5;
